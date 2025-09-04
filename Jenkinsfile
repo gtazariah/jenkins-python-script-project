@@ -10,7 +10,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 echo 'Checking out code from GitHub...'
-                git branch: 'main', 
+                git branch: 'master', 
                     url: 'https://github.com/gtazariah/jenkins-python-script-project.git',
                     credentialsId: 'github-credentials'
             }
